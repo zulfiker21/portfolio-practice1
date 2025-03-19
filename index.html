@@ -15,7 +15,6 @@
   <style>
     .menu-item.active {
       color: orange;
-      /* Active color */
       font-weight: bold;
       border-bottom: 3px solid orange;
     }
@@ -32,7 +31,7 @@
 
 <body class="bg-[#171B1A]">
   <!-- Header -->
-  <section class="max-w-screen-2xl container mx-auto">
+  <section class="max-w-[1320px] mx-auto">
     <div class="flex items-center justify-center">
       <div class="w-2/4 py-4">
         <h1 class="text-white text-[32px] leading-[100%] font-bold pl-12">Daryl <span
@@ -70,11 +69,11 @@
     </ul>
   </div>
   <!-- Banner -->
-  <section class="max-w-screen-2xl container mx-auto sm:py-10 p-0" id="home">
+  <section class="max-w-[1320px] mx-auto sm:py-10 p-0" id="home">
     <div class="flex items-start">
       <!-- Banner Left -->
       <div class="hidden lg:block w-2/4 py-4">
-        <div class="flex">
+        <div class="flex items-center">
           <div>
             <ul class="space-y-1">
               <li><a href="#home"><i class="fa fa-home p-4 text-[#646464] hover:text-amber-300"
@@ -117,7 +116,7 @@
         </div>
       </div>
       <!-- Banner Right -->
-      <div class="w-full p-6 relative">
+      <div class="w-full relative pl-6">
         <div class="bg-[#121414] w-[92px] h-[433px] absolute top-[110px] right-0 hidden lg:block"
           style="clip-path: polygon(0 23%, 100% 0%, 100% 100%, 0% 100%);">
           <ul class="absolute bottom-0 right-4 space-y-4 mb-4">
@@ -156,7 +155,7 @@
           </div>
         </div>
         <!-- resume -->
-        <section class="px-5 py-7" id="profile">
+        <section class="pr-56 py-7" id="profile">
           <h2 class="text-[48px] font-bold mb-4 text-white leading-[100%]">Resume</h2>
           <div class="">
             <div>
@@ -173,7 +172,7 @@
                   <span
                     class="text-white text-[14px] font-bold border border-blue-500 border-opacity-20 p-3 rounded-[4px]">2018–2020</span>
                 </div>
-                <div class="bg-gray-800 text-white p-4 rounded-lg shadow-md">
+                <div class="bg-gray-800 text-white p-6 rounded-lg shadow-md">
                   <h3
                     class="pb-3 bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent text-[18px] font-bold leading-[100%]">
                     Harvard University</h3>
@@ -191,7 +190,7 @@
                   <span
                     class="text-white text-[14px] font-bold border border-blue-500 border-opacity-20 p-3 rounded-[4px]">2018–2020</span>
                 </div>
-                <div class="bg-gray-800 text-white p-4 rounded-lg shadow-md">
+                <div class="bg-gray-800 text-white p-6 rounded-lg shadow-md">
                   <h3
                     class="pb-3 bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent text-[18px] font-bold leading-[100%]">
                     Harvard University</h3>
@@ -219,7 +218,7 @@
                   <span
                     class="text-white text-[14px] font-bold border border-blue-500 border-opacity-20 p-3 rounded-[4px]">2018–2020</span>
                 </div>
-                <div class="bg-gray-800 text-white p-4 rounded-lg shadow-md">
+                <div class="bg-gray-800 text-white p-6 rounded-lg shadow-md">
                   <h3
                     class="pb-3 bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent text-[18px] font-bold leading-[100%]">
                     Harvard University</h3>
@@ -237,7 +236,7 @@
                   <span
                     class="text-white text-[14px] font-bold border border-blue-500 border-opacity-20 p-3 rounded-[4px]">2018–2020</span>
                 </div>
-                <div class="bg-gray-800 text-white p-4 rounded-lg shadow-md">
+                <div class="bg-gray-800 text-white p-6 rounded-lg shadow-md">
                   <h3
                     class="pb-3 bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent text-[18px] font-bold leading-[100%]">
                     Harvard University</h3>
@@ -303,8 +302,8 @@
         <!-- portfolio -->
         <section class="px-5 py-14" id="facebook">
           <h2 class="text-[48px] font-bold mb-4 text-white leading-[100%]">Portfolio</h2>
-          <div class="item-menu py-2">
-            <ul class="bg-black py-6 text-center space-x-10">
+          <div class="item-menu py-5">
+            <ul class="bg-black py-2 text-center space-x-10">
               <li class="inline text-white cursor-pointer menu-item active" data-filter="*">All</li>
               <li class="inline text-white cursor-pointer menu-item" data-filter=".metal">Graphic Design</li>
               <li class="inline text-white cursor-pointer menu-item" data-filter=".transition">Mobile App</li>
@@ -691,7 +690,6 @@
       itemSelector: '.item',
       percentPosition: true,
       masonry: {
-        // use outer width of grid-sizer for columnWidth
         columnWidth: 2,
         gutter: 50,
       }
@@ -705,8 +703,8 @@
 <script>
   $(document).ready(function () {
     $(".menu-item").click(function () {
-      $(".menu-item").removeClass("active"); // Remove active class from all
-      $(this).addClass("active"); // Add active class to clicked item
+      $(".menu-item").removeClass("active"); 
+      $(this).addClass("active"); 
     });
   });
 </script>
